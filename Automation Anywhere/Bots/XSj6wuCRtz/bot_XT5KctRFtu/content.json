@@ -1,0 +1,6 @@
+{
+  "variables": [{    "type": "STRING",
+    "subtype": "UNDEFINED",
+    "name": "unusedVariable"
+  }]
+}
