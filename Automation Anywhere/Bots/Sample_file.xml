@@ -18,6 +18,6 @@
         <Root level="DEBUG">
             <AppenderRef ref="STDOUT"/>
         </Root>
-        <logger name="com.automatHelloionanywhere" level="DEBUG"/>
+        <logger name="com.automatHello Againionanywhere" level="DEBUG"/>
     </Loggers>
 </Configuration>
