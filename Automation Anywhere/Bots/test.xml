@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Repository Manager Mini Regression Suite" time-out="14400000" annotations="JDK"
+	   parallel="none">
+	<listeners>
+		<listener class-name="com.AA.AutomationUtil.TestNGCustomReportListener"/>
+	</listeners>
+
+	    <test name="Create User and Role Tests">
+	        <parameter name="browser" value="Chrome"/>
+	        <classes>
+	            <class name="com.AA.webCR.RepositoryManagerTest.CreateUserAndRoleTest"/>
+	        </classes>
+	    </test>
+
+
+	<test name="Upload File Tests">
+		<parameter name="browser" value="Chrome"/>
+		<classes>
+			<class name="com.AA.webCR.RepositoryManagerTest.UploadFileTest"/>
+		</classes>
+	</test>
+
+	<test name="Check-in File Tests">
+		<parameter name="browser" value="Chrome"/>
+		<classes>
+			<class name="com.AA.webCR.RepositoryManagerTest.CheckInFileTest"/>
+		</classes>
+	</test>
+
+	<test name="Re-Checkin File Tests">
+		<parameter name="browser" value="Chrome"/>
+		<classes>
+			<class name="com.AA.webCR.RepositoryManagerTest.ReCheckInFileTest"/>
+		</classes>
+	</test>
+
+	<test name="Check-in and Check-out Files Tests">
+		<parameter name="browser" value="Chrome"/>
+		<classes>
+			<class name="com.AA.webCR.RepositoryManagerTest.CheckInAndCheckoutFilesTest"/>
+		</classes>
+	</test>
+
+	<!-- <test name="Revert Edit Bots And Text File Tests">
+         <parameter name="browser" value="Chrome"/>
+         <classes>
+             <class name="com.AA.webCR.RepositoryManagerTest.RevertEditBotsAndTextFileTest"/>
+         </classes>
+
+
+     <test name="Check Out Non TaskBot Version Tests">
+         <parameter name="browser" value="Chrome"/>
+         <classes>
+             <class name="com.AA.webCR.RepositoryManagerTest.CheckOutNonTaskBotVersionTest"/>
+         </classes>
+     </test>
+
+               <test name="Check-in Maximum Ten Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckInMaxTenBotsTest"/>
+                   </classes>
+               </test>
+
+               <test name="Main Bot With Child Bot And DLL Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.MainBotWithChildBotAndDLLTest"/>
+                   </classes>
+               </test>
+
+               <test name="Cancel Checkout Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CancelCheckOutBotTest"/>
+                   </classes>
+               </test>
+
+               <test name="Check-in and Check-out Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckInAndCheckOutBotTest"/>
+                   </classes>
+               </test>
+
+               <test name="Check-in and Check-out Main Bot and Sub Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckInAndCheckOutMainBotAndSubBotTest"/>
+                   </classes>
+               </test>
+
+               <test name="Check-in and Check-out Process Bot, Form and Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckInAndCheckOutProcessFormAndBotTest"/>
+                   </classes>
+               </test>
+
+               <test name="Check-in Maximum Ten Bot And Sub Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckInMaxTenBotsAlongWithSubBotsTest"/>
+                   </classes>
+               </test>
+
+               <test name="Check-out Folder Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CheckOutFolderTest"/>
+                   </classes>
+               </test>
+
+               <test name="Compare Bot Version Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.CompareBotVersionsTest"/>
+                   </classes>
+               </test>
+
+               <test name="Advance Checkout Main Bot and Sub Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.AdvanceCheckOutMainBotAlongWithSubBotTest"/>
+                   </classes>
+               </test>
+
+               <test name="Advance Checkout Version Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.AdvanceCheckOutVersionTest"/>
+                   </classes>
+               </test>
+
+               <test name="Production Label Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.ProductionLabelTest"/>
+                   </classes>
+               </test>
+
+               <test name="Update Bot Description Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.UpdateDescriptionTest"/>
+                   </classes>
+               </test>
+
+               <test name="Import Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.ImportBotsTest"/>
+                   </classes>
+               </test>
+
+               <test name="Export Bot Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.ExportBotsTest"/>
+                   </classes>
+               </test>
+
+               <test name="Bulk Check-out Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.BulkCheckOutTest"/>
+                   </classes>
+               </test>
+
+               <test name="Bulk Check-out basic flow Tests">
+                   <parameter name="browser" value="Chrome"/>
+                   <classes>
+                       <class name="com.AA.webCR.RepositoryManagerTest.BulkCheckOutBasicFlowTest"/>
+                   </classes>
+               </test>
+           -->
+
+
+	<!-- *** Below are invalid tests ****
+
+    <test name="Private Compare Page Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.PrivateComparePageTest"/>
+        </classes>
+    </test>
+
+    <test name="User Exported Bot Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.UserExportedBotTest"/>
+        </classes>
+    </test>
+
+    <test name="Same Folder Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.UserNotAbleToCreateSameFoderNameTest"/>
+        </classes>
+    </test>
+
+    <test name="Bulk CheckIn From Different Folders Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.BulkCheckInFromDifferentFoldersTest"/>
+        </classes>
+    </test>
+
+    <test name="Compare Page Functionality Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.ComparePageFunctionality"/>
+        </classes>
+    </test>
+
+    <test name="Multiple File And Bulk Checkout Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.MultipleFileAndBulkCheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="User Able To See Skipped Message Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.UserAbleToSeeSkippedMessageTest"/>
+        </classes>
+    </test>
+
+
+    <test name="CheckOut Dependency RepoBots">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.CheckOutDependencyRepoBots"/>
+        </classes>
+    </test>
+
+    <test name="Create Mainbot With File RepoBots">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.CreateMainbotWithFileRepoBots"/>
+        </classes>
+    </test>
+
+    <test name="CheckIn And Out Parent Child RepoBots">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.CheckInAndOutParentChildRepoBots"/>
+        </classes>
+    </test>
+
+    <test name="Create Parent and Child Bot Dependency RepoBots">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.CreateParentandChildBotDependencyRepoBots"/>
+        </classes>
+    </test>
+
+    <test name="Create Parent Bot with RepoSubBot and RepoImageBot">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.AA.webCR.RepositoryManagerTest.CreateParentBotwithRepoSubBotandRepoImageBot"/>
+        </classes>
+    </test>
+    -->
+</suite>
